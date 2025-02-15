@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 14, 2025 at 02:07 PM
+-- Generation Time: Feb 15, 2025 at 03:54 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -39,14 +39,10 @@ CREATE TABLE `barang` (
 --
 
 INSERT INTO `barang` (`id`, `nama`, `stok`, `harga`) VALUES
-(1, 'v axis 2/1', 3, 6000.00),
-(2, 'v axis 2/3', 3, 10000.00),
-(5, 'v axis 3/3', 2, 13000.00),
-(7, 'v axis 8/3', 1, 18000.00),
-(8, 'v axis 2/5', 1, 14000.00),
-(9, 'v axis 4/5', 1, 17000.00),
-(10, 'v axis 8/5', 1, 23000.00),
-(11, 'v axis 12/5', 1, 28000.00);
+(13, 'sabun lux', 10, 3000.00),
+(16, 'Sabun Colek', 2, 12000.00),
+(17, 'shampo', 7, 20000.00),
+(19, 'MIunyak Goreng', 3, 23000.00);
 
 -- --------------------------------------------------------
 
@@ -66,8 +62,10 @@ CREATE TABLE `transaksi` (
 --
 
 INSERT INTO `transaksi` (`id`, `barang_id`, `jumlah`, `tanggal`) VALUES
-(2, 2, 1, '2025-02-13 12:55:10'),
-(3, 1, 1, '2025-02-13 13:10:47');
+(5, 13, 2, '2025-02-14 13:47:12'),
+(6, 16, 3, '2025-02-14 13:47:53'),
+(7, 17, 3, '2025-02-15 02:02:54'),
+(8, 19, 2, '2025-02-15 02:03:36');
 
 --
 -- Indexes for dumped tables
@@ -94,13 +92,13 @@ ALTER TABLE `transaksi`
 -- AUTO_INCREMENT for table `barang`
 --
 ALTER TABLE `barang`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `transaksi`
 --
 ALTER TABLE `transaksi`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Constraints for dumped tables
